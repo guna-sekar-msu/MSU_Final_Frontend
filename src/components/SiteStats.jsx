@@ -125,7 +125,8 @@ const SiteStats = ({
             </MenuButton>
           </div>
           <MenuItems className="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-            {["Static JSON + STACOV File", "Over All Site Info", "Over All Vs MYCS2", "OPUSNET Data","MYCS2","IGS20_SIF","opusnet"]
+            {/* {["Static JSON + STACOV File", "Over All Site Info", "Over All Vs MYCS2", "OPUSNET Data","MYCS2","IGS20_SIF","opusnet"] */}
+            {["Static JSON + STACOV File","MYCS2","IGS20_SIF","opusnet"]
               .filter((option) => !(comparisonOption === "Over All Site Info" && option === "Over All Site Info"))
               .map((option) => (
                 <MenuItem key={option}>
@@ -143,7 +144,7 @@ const SiteStats = ({
           </MenuItems>
         </Menu>
 
-        <div className="flex items-center comparison-checkbox">
+        {/* <div className="flex items-center comparison-checkbox">
           <input
             type="checkbox"
             id="comparison"
@@ -154,7 +155,7 @@ const SiteStats = ({
           <label htmlFor="comparison" className="ml-2 text-sm text-gray-700">
             Comparison
           </label>
-        </div>
+        </div> */}
       </div>
 
       {showDateFilter && (
